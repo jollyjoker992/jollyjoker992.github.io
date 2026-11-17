@@ -3,23 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hieu Pham — software engineer</title>
-  <meta name="description" content="Hieu Pham (Hiếu Phạm), software engineer in Da Nang, Vietnam. Building digital-art infrastructure at Feral File, and open-source tools for personal health data and early learning.">
-  <meta name="author" content="Hieu Pham">
+  <title>Hieu Pham</title>
+  <meta name="description" content="Hieu Pham (Hiếu Phạm), software engineer in Da Nang, Vietnam. Building the systems behind digital art at Feral File.">
   <link rel="canonical" href="https://jollyjoker992.github.io/">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#14130f" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://jollyjoker992.github.io/">
-  <meta property="og:title" content="Hieu Pham — software engineer">
-  <meta property="og:description" content="Digital-art infrastructure at Feral File. Open-source tools for personal health data and early learning.">
-  <meta property="og:image" content="https://jollyjoker992.github.io/assets/img/og.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="profile:username" content="jollyjoker992">
+  <meta property="og:title" content="Hieu Pham">
+  <meta property="og:description" content="Software engineer in Da Nang, Vietnam. Building the systems behind digital art at Feral File.">
+  <meta property="og:image" content="https://jollyjoker992.github.io/assets/og.png">
   <meta name="twitter:card" content="summary_large_image">
 
   <script type="application/ld+json">
@@ -38,138 +32,23 @@
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<main>
+  <h1>Hieu Pham</h1>
+  <p class="sub">Software engineer · Da Nang, Vietnam</p>
 
-<header class="wrap hero">
-  <p class="kicker">Da Nang, Vietnam · on GitHub since 2015</p>
-  <h1>Hieu Pham <span class="native" lang="vi">Hiếu Phạm</span></h1>
-  <p class="lede">
-    Software engineer. I build the plumbing behind digital art at
-    <a href="https://feralfile.com">Feral File</a>: indexers, device daemons and an open display protocol.
-    Outside work I write small, careful tools: a learning game for preschoolers and a
-    personal health archive that should outlive any app.
-  </p>
-  <nav class="links" aria-label="Elsewhere">
+  <h2>Now</h2>
+  <p>I work at <a href="https://feralfile.com">Feral File</a>, on the systems that carry digital art
+    from the blockchain to a screen on the wall.</p>
+  <p>In my own time I make small tools for family life: a learning game for young children,
+    and a private archive for health records.</p>
+
+  <h2>Before</h2>
+  <p>Bitcoin wallet libraries for Blockchain Commons. Before that, the Bitmark blockchain:
+    its node, SDKs and Android apps.</p>
+
+  <footer>
     <a href="https://github.com/jollyjoker992">GitHub</a>
-    <a href="https://playlittlegarage.org">Little Garage</a>
-    <a href="#now">Work</a>
-    <a href="#projects">Projects</a>
-    <a href="#earlier">Earlier</a>
-  </nav>
-</header>
-
-<main id="main">
-
-<section id="now" class="wrap">
-  <h2><span class="num">01</span> Now — Feral File</h2>
-  <p class="intro">
-    Feral File is a platform for digital art, and FF1 is its device for showing that art on a wall.
-    I work across the stack that gets a work from the chain to the screen, mostly in Go and TypeScript.
-  </p>
-
-  <div class="cards">
-    <article class="card">
-      <h3><a href="https://github.com/feral-file/ff-indexer-v2">ff-indexer-v2</a></h3>
-      <p>NFT indexer for Ethereum and Tezos. Top contributor. Metadata enrichment, IPFS gateway pooling,
-        on-chain (onchfs) media, a health sweeper that tells broken media from slow media, resilient chain subscriptions.</p>
-      <p class="tags">Go · GraphQL · Postgres</p>
-    </article>
-    <article class="card">
-      <h3><a href="https://github.com/feral-file/ffos-user">FF1 device</a></h3>
-      <p>The daemon that runs FF1 (<a href="https://github.com/feral-file/ffos-user">ffos-user</a>,
-        <a href="https://github.com/feral-file/ffos">ffos</a>, <a href="https://github.com/feral-file/ff-player">ff-player</a>):
-        per-device signature verification, media-health probes with rendered-frame evidence,
-        an offline artwork cache that survives OTA updates.</p>
-      <p class="tags">Go · Linux · Chromium</p>
-    </article>
-    <article class="card">
-      <h3><a href="https://github.com/display-protocol/dp1">DP-1 protocol</a></h3>
-      <p>An open protocol for playlists of digital art. Moved the feed to signature-only auth with
-        role-aware ownership, and built tools on it: <a href="https://github.com/display-protocol/dp1-publisher">dp1-publisher</a>,
-        <a href="https://github.com/display-protocol/dp1-cli">dp1-cli</a>, <a href="https://github.com/feral-file/ff-cli">ff-cli</a>.</p>
-      <p class="tags">TypeScript · EIP-191 · Go</p>
-    </article>
-    <article class="card">
-      <h3><a href="https://github.com/feral-file/ff-eth-logs">ff-eth-logs</a></h3>
-      <p>A warehouse for Ethereum mainnet NFT logs that answers <code>eth_getLogs</code> from Postgres,
-        with Parquet backfill and tail ingestion. Built it from the first commit.</p>
-      <p class="tags">Go · Postgres · Parquet</p>
-    </article>
-  </div>
-  <p class="aside">Also: Feral File's <a href="https://github.com/ethereum/clear-signing-erc7730-registry">ERC-7730 clear-signing descriptors</a>
-    upstream at Ethereum, and exhibition smart contracts.</p>
-</section>
-
-<section id="projects" class="wrap">
-  <h2><span class="num">02</span> Projects</h2>
-
-  <article class="feature">
-    <a class="shot" href="https://playlittlegarage.org">
-      <img src="/assets/img/little-garage.jpg" width="1200" height="900" loading="lazy"
-           alt="Little Garage home screen on an iPad: six zones — Parking Lot, Highway, Paint Shop, Construction Site, Garage, Playground">
-    </a>
-    <div>
-      <h3><a href="https://github.com/jollyjoker992/little-garage">Little Garage</a></h3>
-      <p>Car-themed learning games for 3–4 year olds: numbers, letters, colors, shapes, logic and first English words.
-        27 games with adaptive levels, spoken in English or Vietnamese, offline on iPad as a PWA.
-        Free, no ads, no accounts, no tracking.</p>
-      <p class="tags">TypeScript · PWA · Cloudflare Pages</p>
-      <p><a class="btn" href="https://playlittlegarage.org">Play at playlittlegarage.org →</a></p>
-    </div>
-  </article>
-
-  <article class="feature vault">
-    <div>
-      <h3>A personal health vault</h3>
-      <p>Three open-source tools that bring a family's health data into one place that the family owns:
-        a <a href="https://www.medplum.com">Medplum</a> FHIR R4 server, readable by AI health-advisor agents.</p>
-      <pre class="diagram" role="img" aria-label="Data flow: iPhone, Garmin and paper sources flow into FHIR R4 in Medplum, read by agents">iPhone ─ encrypted ─▶ relay ─┐
-Garmin ─ official API ───────┼─▶ FHIR R4 ─▶ Medplum ─▶ agents
-Paper  ─ scan · review ──────┘</pre>
-      <ul class="list">
-        <li><a href="https://github.com/jollyjoker992/healthkit-archive"><b>healthkit-archive</b></a> —
-          end-to-end encrypted backup of Apple Health. The phone encrypts with age and signs with the Secure Enclave;
-          the Cloudflare relay only ever sees ciphertext.</li>
-        <li><a href="https://github.com/jollyjoker992/garmin-archive"><b>garmin-archive</b></a> —
-          backs up Garmin Connect via the official API to Google Drive and S3 Glacier. Self-healing, polite to the API,
-          standard library only.</li>
-        <li><a href="https://github.com/jollyjoker992/paper-archive"><b>paper-archive</b></a> —
-          paper lab reports, ECGs, scans and vaccination slips into FHIR. An agent transcribes;
-          deterministic code validates and maps; a person approves. The agent never writes FHIR.</li>
-      </ul>
-      <p class="tags">Python · Swift · Cloudflare Workers · FHIR R4</p>
-    </div>
-  </article>
-</section>
-
-<section id="earlier" class="wrap">
-  <h2><span class="num">03</span> Earlier</h2>
-  <ol class="timeline">
-    <li>
-      <span class="when">2020</span>
-      <div><b>Blockchain Commons</b> — first release of
-        <a href="https://github.com/BlockchainCommons/GordianSigner-Android">Gordian Signer for Android</a>, and Java/Android
-        wrappers for <a href="https://github.com/BlockchainCommons/bc-ur-java">UR</a> and LibWally.</div>
-    </li>
-    <li>
-      <span class="when">2019–20</span>
-      <div><b>Bitmark</b> — <a href="https://github.com/bitmark-inc/bitmarkd">bitmarkd</a>,
-        the <a href="https://github.com/bitmark-inc/bitmark-sdk-java">Java SDK</a> and Android apps.</div>
-    </li>
-    <li>
-      <span class="when">2018</span>
-      <div><b>Clean Architecture on Android</b> — sample projects in
-        <a href="https://github.com/jollyjoker992/CleanArchitecture-Kotlin">Kotlin</a> and
-        <a href="https://github.com/jollyjoker992/CleanArchitecture-Java">Java</a>.</div>
-    </li>
-  </ol>
-</section>
-
+  </footer>
 </main>
-
-<footer class="wrap foot">
-  <p>Hieu Pham · <a href="https://github.com/jollyjoker992">github.com/jollyjoker992</a></p>
-  <p class="muted">Plain HTML and CSS, no tracking. <a href="https://github.com/jollyjoker992/jollyjoker992.github.io">Source</a>.</p>
-</footer>
 </body>
 </html>
